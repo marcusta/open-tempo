@@ -27,7 +27,7 @@ enum LEDStrip {
     static let metersPerLED: Double = 1.0 / ledsPerMeter  // ~0.01667 m
 }
 
-enum Animation {
+enum AnimationConfig {
     static let fps: Double = 60.0
     static let frameDuration: Double = 1.0 / fps
     static let sequenceDuration: Double = 5.0
@@ -38,7 +38,15 @@ enum Defaults {
     static let backstrokeTime: Double = 0.6   // seconds
     static let downstrokeTime: Double = 0.3   // seconds
     static let ballSpeed: Double = 1.0        // m/s
-    static let smashFactor: Double = 1.0
-    static let stimp: Double = 10.0           // stimpmeter reading in feet
+    static let stimp: Double = 11.0            // stimpmeter reading in feet
     static let puttDistance: Double = 3.0      // meters
+
+    /// Default smash factor calibration curve based on typical putter measurements.
+    /// Short putts (~2 mph) have lower smash, longer putts (~10 mph) have higher smash.
+    static let smashCalibration: [SmashCalibrationPoint] = [
+        .init(ballSpeedMph: 2.0, smashFactor: 1.15),
+        .init(ballSpeedMph: 4.0, smashFactor: 1.30),
+        .init(ballSpeedMph: 6.0, smashFactor: 1.45),
+        .init(ballSpeedMph: 10.0, smashFactor: 1.58),
+    ]
 }

@@ -13,6 +13,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
+                LEDSimulatorView(parameters: parameters)
+                    .background(.black)
+
                 SettingsView(parameters: $parameters)
 
                 controlBar

@@ -16,7 +16,7 @@ struct Preset: Identifiable, Codable {
         id: UUID = UUID(),
         name: String,
         parameters: PuttingParameters,
-        fps: Double = Animation.fps,
+        fps: Double = AnimationConfig.fps,
         frameCount: Int,
         frameData: Data,
         createdAt: Date = Date()

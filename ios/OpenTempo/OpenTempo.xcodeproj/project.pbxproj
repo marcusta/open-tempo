@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10001 /* OpenTempoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001; };
-		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002; };
-		A10003 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003; };
-		A10004 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004; };
-		A10005 /* PuttingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005; };
-		A10006 /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006; };
-		A10007 /* AnimationRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007; };
-		A10008 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008; };
-		A10009 /* PresetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009; };
-		A10010 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010; };
+		A10001 /* OpenTempoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001 /* OpenTempoApp.swift */; };
+		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002 /* ContentView.swift */; };
+		A10003 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003 /* SettingsView.swift */; };
+		A10004 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004 /* ConnectionView.swift */; };
+		A10005 /* PuttingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005 /* PuttingParameters.swift */; };
+		A10006 /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006 /* Preset.swift */; };
+		A10007 /* AnimationRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007 /* AnimationRenderer.swift */; };
+		A10008 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008 /* BLEManager.swift */; };
+		A10009 /* PresetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009 /* PresetManager.swift */; };
+		A10010 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010 /* Constants.swift */; };
+		A10011 /* LEDSimulatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* LEDSimulatorView.swift */; };
+		A10012 /* SpeedDistanceLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* SpeedDistanceLookup.swift */; };
+		A10013 /* SmashCalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* SmashCalibrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C10001 /* OpenTempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTempo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10001 /* OpenTempoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTempoApp.swift; sourceTree = "<group>"; };
 		B10002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B10003 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -31,6 +33,10 @@
 		B10008 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
 		B10009 /* PresetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetManager.swift; sourceTree = "<group>"; };
 		B10010 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B10011 /* LEDSimulatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDSimulatorView.swift; sourceTree = "<group>"; };
+		B10012 /* SpeedDistanceLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedDistanceLookup.swift; sourceTree = "<group>"; };
+		B10013 /* SmashCalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmashCalibrationView.swift; sourceTree = "<group>"; };
+		C10001 /* OpenTempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTempo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 				B10002 /* ContentView.swift */,
 				B10003 /* SettingsView.swift */,
 				B10004 /* ConnectionView.swift */,
+				B10011 /* LEDSimulatorView.swift */,
+				B10013 /* SmashCalibrationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 				B10007 /* AnimationRenderer.swift */,
 				B10008 /* BLEManager.swift */,
 				B10009 /* PresetManager.swift */,
+				B10012 /* SpeedDistanceLookup.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -187,6 +196,9 @@
 				A10008 /* BLEManager.swift in Sources */,
 				A10009 /* PresetManager.swift in Sources */,
 				A10010 /* Constants.swift in Sources */,
+				A10011 /* LEDSimulatorView.swift in Sources */,
+				A10012 /* SpeedDistanceLookup.swift in Sources */,
+				A10013 /* SmashCalibrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +259,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC979WJ4JA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Open Tempo needs Bluetooth to connect to your putting tempo trainer.";
@@ -255,6 +268,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -274,6 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC979WJ4JA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Open Tempo needs Bluetooth to connect to your putting tempo trainer.";
@@ -282,6 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +333,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = H10001 /* Project object */;
 }
